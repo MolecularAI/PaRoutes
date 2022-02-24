@@ -1,0 +1,489 @@
+[
+    [
+        {
+            "type": "mol",
+            "smiles": "COc1ccc2c(c1)cc(-c1ccccc1)n2Cc1cccc(-c2noc(=O)[nH]2)n1",
+            "in_stock": false,
+            "children": [
+                {
+                    "type": "reaction",
+                    "smiles": "[C:1]([cH3:2])[n:4]([cH2:3])[cH2:5]>>Cl[C:1][cH3:2].[cH2:3][n:4][cH2:5]",
+                    "children": [
+                        {
+                            "type": "mol",
+                            "smiles": "O=c1[nH]c(-c2cccc(CCl)n2)no1",
+                            "in_stock": false,
+                            "children": [
+                                {
+                                    "type": "reaction",
+                                    "smiles": "[NH:1]:[c:2]([cH2:3])-[c:4]1[n:5][c:9](=[O:8])[o:7][n:6]1>>[NH:1]:[c:2]([cH2:3])[C:4]([N:5])=[N:6][O:7].c1cn([C:9](n2ccnc2)=[O:8])cn1",
+                                    "children": [
+                                        {
+                                            "type": "mol",
+                                            "smiles": "O=C(n1ccnc1)n1ccnc1",
+                                            "in_stock": true
+                                        },
+                                        {
+                                            "type": "mol",
+                                            "smiles": "NC(=NO)c1cccc(CCl)n1",
+                                            "in_stock": false,
+                                            "children": [
+                                                {
+                                                    "type": "reaction",
+                                                    "smiles": "[NH:1]:[cH:2][C:3]([N:4])=[N:5][OH:6]>>[N:5][OH:6].[NH:1]:[cH:2][C:3]#[N:4]",
+                                                    "children": [
+                                                        {
+                                                            "type": "mol",
+                                                            "smiles": "NO",
+                                                            "in_stock": true
+                                                        },
+                                                        {
+                                                            "type": "mol",
+                                                            "smiles": "N#Cc1cccc(CCl)n1",
+                                                            "in_stock": true
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "mol",
+                            "smiles": "COc1ccc2[nH]c(-c3ccccc3)cc2c1",
+                            "in_stock": true
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "mol",
+            "smiles": "COc1ccc2c(c1)cc(-c1ccccc1)n2Cc1cccc(-c2noc(=O)[nH]2)n1",
+            "in_stock": false,
+            "children": [
+                {
+                    "type": "reaction",
+                    "smiles": "[NH:1]:[c:2]([cH2:3])-[c:4]1[n:5][c:9](=[O:8])[o:7][n:6]1>>[NH:1]:[c:2]([cH2:3])[C:4]([N:5])=[N:6][O:7].c1cn([C:9](n2ccnc2)=[O:8])cn1",
+                    "children": [
+                        {
+                            "type": "mol",
+                            "smiles": "O=C(n1ccnc1)n1ccnc1",
+                            "in_stock": true
+                        },
+                        {
+                            "type": "mol",
+                            "smiles": "COc1ccc2c(c1)cc(-c1ccccc1)n2Cc1cccc(C(N)=NO)n1",
+                            "in_stock": false,
+                            "children": [
+                                {
+                                    "type": "reaction",
+                                    "smiles": "[NH:1]:[cH:2][C:3]([N:4])=[N:5][OH:6]>>[N:5][OH:6].[NH:1]:[cH:2][C:3]#[N:4]",
+                                    "children": [
+                                        {
+                                            "type": "mol",
+                                            "smiles": "NO",
+                                            "in_stock": true
+                                        },
+                                        {
+                                            "type": "mol",
+                                            "smiles": "COc1ccc2c(c1)cc(-c1ccccc1)n2Cc1cccc(C#N)n1",
+                                            "in_stock": false,
+                                            "children": [
+                                                {
+                                                    "type": "reaction",
+                                                    "smiles": "[C:1]([cH:2]:[NH:3])[n:5]([cH2:4])[cH2:6]>>Cl[C:1][cH:2]:[NH:3].[cH2:4][n:5][cH2:6]",
+                                                    "children": [
+                                                        {
+                                                            "type": "mol",
+                                                            "smiles": "N#Cc1cccc(CCl)n1",
+                                                            "in_stock": true
+                                                        },
+                                                        {
+                                                            "type": "mol",
+                                                            "smiles": "COc1ccc2[nH]c(-c3ccccc3)cc2c1",
+                                                            "in_stock": true
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    [
+        {
+            "type": "mol",
+            "smiles": "CC(=O)c1ccc(OS(=O)(=O)C(F)(F)F)c2c1CCCC2",
+            "in_stock": false,
+            "children": [
+                {
+                    "type": "reaction",
+                    "smiles": "[S:1](=[O:2])(=[O:3])([C:4]([F:5])([F:6])[F:7])[O:8][cH3:9]>>Cl[S:1](=[O:2])(=[O:3])[C:4]([F:5])([F:6])[F:7].[O:8][cH3:9]",
+                    "children": [
+                        {
+                            "type": "mol",
+                            "smiles": "O=S(=O)(Cl)C(F)(F)F",
+                            "in_stock": true
+                        },
+                        {
+                            "type": "mol",
+                            "smiles": "CC(=O)c1ccc(O)c2c1CCCC2",
+                            "in_stock": false,
+                            "children": [
+                                {
+                                    "type": "reaction",
+                                    "smiles": "[C:1]([CH3:2])(=[O:3])[c:5]([cH2:4])[cH2:6]>>Cl[C:1]([CH3:2])=[O:3].[cH2:4][c:5][cH2:6]",
+                                    "children": [
+                                        {
+                                            "type": "mol",
+                                            "smiles": "CC(=O)Cl",
+                                            "in_stock": true
+                                        },
+                                        {
+                                            "type": "mol",
+                                            "smiles": "Oc1cccc2c1CCCC2",
+                                            "in_stock": true
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "mol",
+            "smiles": "CC(=O)c1ccc(OS(=O)(=O)C(F)(F)F)c2c1CCCC2",
+            "in_stock": false,
+            "children": [
+                {
+                    "type": "reaction",
+                    "smiles": "[C:1]([CH3:2])(=[O:3])[c:5]([cH2:4])[cH2:6]>>Cl[C:1]([CH3:2])=[O:3].[cH2:4][c:5][cH2:6]",
+                    "children": [
+                        {
+                            "type": "mol",
+                            "smiles": "CC(=O)Cl",
+                            "in_stock": true
+                        },
+                        {
+                            "type": "mol",
+                            "smiles": "O=S(=O)(Oc1cccc2c1CCCC2)C(F)(F)F",
+                            "in_stock": false,
+                            "children": [
+                                {
+                                    "type": "reaction",
+                                    "smiles": "[S:1](=[O:2])(=[O:3])([C:4]([F:5])([F:6])[F:7])[O:8][cH3:9]>>O=S(=O)(O[S:1](=[O:2])(=[O:3])[C:4]([F:5])([F:6])[F:7])C(F)(F)F.[O:8][cH3:9]",
+                                    "children": [
+                                        {
+                                            "type": "mol",
+                                            "smiles": "Oc1cccc2c1CCCC2",
+                                            "in_stock": true
+                                        },
+                                        {
+                                            "type": "mol",
+                                            "smiles": "O=S(=O)(OS(=O)(=O)C(F)(F)F)C(F)(F)F",
+                                            "in_stock": true
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "mol",
+            "smiles": "CC(=O)c1ccc(OS(=O)(=O)C(F)(F)F)c2c1CCCC2",
+            "in_stock": false,
+            "children": [
+                {
+                    "type": "reaction",
+                    "smiles": "[C:1][C:2](=[O:3])[cH3:4]>>O=C(Cl)[C:1](=O)Cl.O=[C:2]([O:3])[cH3:4]",
+                    "children": [
+                        {
+                            "type": "mol",
+                            "smiles": "O=C(Cl)C(=O)Cl",
+                            "in_stock": true
+                        },
+                        {
+                            "type": "mol",
+                            "smiles": "O=C(O)c1ccc(OS(=O)(=O)C(F)(F)F)c2c1CCCC2",
+                            "in_stock": false,
+                            "children": [
+                                {
+                                    "type": "reaction",
+                                    "smiles": "O=C(O)[c:1]([cH2:2])[cH2:3]>>Br[c:1]([cH2:2])[cH2:3]",
+                                    "children": [
+                                        {
+                                            "type": "mol",
+                                            "smiles": "O=S(=O)(Oc1ccc(Br)c2c1CCCC2)C(F)(F)F",
+                                            "in_stock": false,
+                                            "children": [
+                                                {
+                                                    "type": "reaction",
+                                                    "smiles": "[S:1](=[O:2])(=[O:3])([C:4]([F:5])([F:6])[F:7])[O:8][cH3:9]>>O=S(=O)(O[S:1](=[O:2])(=[O:3])[C:4]([F:5])([F:6])[F:7])C(F)(F)F.[O:8][cH3:9]",
+                                                    "children": [
+                                                        {
+                                                            "type": "mol",
+                                                            "smiles": "Oc1ccc(Br)c2c1CCCC2",
+                                                            "in_stock": true
+                                                        },
+                                                        {
+                                                            "type": "mol",
+                                                            "smiles": "O=S(=O)(OS(=O)(=O)C(F)(F)F)C(F)(F)F",
+                                                            "in_stock": true
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "mol",
+            "smiles": "CC(=O)c1ccc(OS(=O)(=O)C(F)(F)F)c2c1CCCC2",
+            "in_stock": false,
+            "children": [
+                {
+                    "type": "reaction",
+                    "smiles": "[cH:1]1[cH:2][C:3][C:4][C:5][C:6]1>>[cH:1]1[cH:2][c:3][c:4][c:5][c:6]1",
+                    "children": [
+                        {
+                            "type": "mol",
+                            "smiles": "CC(=O)c1ccc(OS(=O)(=O)C(F)(F)F)c2ccccc12",
+                            "in_stock": false,
+                            "children": [
+                                {
+                                    "type": "reaction",
+                                    "smiles": "C[C:2](=[O:1])[cH3:3]>>[O:1]=[C:2][cH3:3]",
+                                    "children": [
+                                        {
+                                            "type": "mol",
+                                            "smiles": "O=Cc1ccc(OS(=O)(=O)C(F)(F)F)c2ccccc12",
+                                            "in_stock": false,
+                                            "children": [
+                                                {
+                                                    "type": "reaction",
+                                                    "smiles": "[S:1](=[O:2])(=[O:3])([C:4]([F:5])([F:6])[F:7])[O:8][cH3:9]>>O=S(=O)(O[S:1](=[O:2])(=[O:3])[C:4]([F:5])([F:6])[F:7])C(F)(F)F.[O:8][cH3:9]",
+                                                    "children": [
+                                                        {
+                                                            "type": "mol",
+                                                            "smiles": "O=Cc1ccc(O)c2ccccc12",
+                                                            "in_stock": true
+                                                        },
+                                                        {
+                                                            "type": "mol",
+                                                            "smiles": "O=S(=O)(OS(=O)(=O)C(F)(F)F)C(F)(F)F",
+                                                            "in_stock": true
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "mol",
+            "smiles": "CC(=O)c1ccc(OS(=O)(=O)C(F)(F)F)c2c1CCCC2",
+            "in_stock": false,
+            "children": [
+                {
+                    "type": "reaction",
+                    "smiles": "[C:1]([CH3:2])[cH3:3]>>O=[C:1]([CH3:2])[cH3:3]",
+                    "children": [
+                        {
+                            "type": "mol",
+                            "smiles": "CC(=O)c1ccc(OS(=O)(=O)C(F)(F)F)c2c1C(=O)CCC2",
+                            "in_stock": false,
+                            "children": [
+                                {
+                                    "type": "reaction",
+                                    "smiles": "[C:1]([CH3:2])(=[O:3])[c:5]([cH2:4])[cH2:6]>>Cl[C:1]([CH3:2])=[O:3].[cH2:4][c:5][cH2:6]",
+                                    "children": [
+                                        {
+                                            "type": "mol",
+                                            "smiles": "CC(=O)Cl",
+                                            "in_stock": true
+                                        },
+                                        {
+                                            "type": "mol",
+                                            "smiles": "O=C1CCCc2c(OS(=O)(=O)C(F)(F)F)cccc21",
+                                            "in_stock": false,
+                                            "children": [
+                                                {
+                                                    "type": "reaction",
+                                                    "smiles": "[S:1](=[O:2])(=[O:3])([C:4]([F:5])([F:6])[F:7])[O:8][cH3:9]>>O=S(=O)(O[S:1](=[O:2])(=[O:3])[C:4]([F:5])([F:6])[F:7])C(F)(F)F.[O:8][cH3:9]",
+                                                    "children": [
+                                                        {
+                                                            "type": "mol",
+                                                            "smiles": "O=C1CCCc2c(O)cccc21",
+                                                            "in_stock": true
+                                                        },
+                                                        {
+                                                            "type": "mol",
+                                                            "smiles": "O=S(=O)(OS(=O)(=O)C(F)(F)F)C(F)(F)F",
+                                                            "in_stock": true
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "mol",
+            "smiles": "CC(=O)c1ccc(OS(=O)(=O)C(F)(F)F)c2c1CCCC2",
+            "in_stock": false,
+            "children": [
+                {
+                    "type": "reaction",
+                    "smiles": "C[C:2](=[O:1])[cH3:3]>>[O:1]=[C:2][cH3:3]",
+                    "children": [
+                        {
+                            "type": "mol",
+                            "smiles": "O=Cc1ccc(OS(=O)(=O)C(F)(F)F)c2c1CCCC2",
+                            "in_stock": false,
+                            "children": [
+                                {
+                                    "type": "reaction",
+                                    "smiles": "[O:1]=[C:2][c:4]([cH2:3])[cH2:5]>>C[O:1][C:2](Cl)Cl.[cH2:3][c:4][cH2:5]",
+                                    "children": [
+                                        {
+                                            "type": "mol",
+                                            "smiles": "COC(Cl)Cl",
+                                            "in_stock": true
+                                        },
+                                        {
+                                            "type": "mol",
+                                            "smiles": "O=S(=O)(Oc1cccc2c1CCCC2)C(F)(F)F",
+                                            "in_stock": false,
+                                            "children": [
+                                                {
+                                                    "type": "reaction",
+                                                    "smiles": "[S:1](=[O:2])(=[O:3])([C:4]([F:5])([F:6])[F:7])[O:8][cH3:9]>>O=S(=O)(O[S:1](=[O:2])(=[O:3])[C:4]([F:5])([F:6])[F:7])C(F)(F)F.[O:8][cH3:9]",
+                                                    "children": [
+                                                        {
+                                                            "type": "mol",
+                                                            "smiles": "Oc1cccc2c1CCCC2",
+                                                            "in_stock": true
+                                                        },
+                                                        {
+                                                            "type": "mol",
+                                                            "smiles": "O=S(=O)(OS(=O)(=O)C(F)(F)F)C(F)(F)F",
+                                                            "in_stock": true
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "mol",
+            "smiles": "CC(=O)c1ccc(OS(=O)(=O)C(F)(F)F)c2c1CCCC2",
+            "in_stock": false,
+            "children": [
+                {
+                    "type": "reaction",
+                    "smiles": "[C:1]([CH3:2])[cH3:3]>>O=[C:1]([CH3:2])[cH3:3]",
+                    "children": [
+                        {
+                            "type": "mol",
+                            "smiles": "CC(=O)c1ccc(OS(=O)(=O)C(F)(F)F)c2c1CCCC2=O",
+                            "in_stock": false,
+                            "children": [
+                                {
+                                    "type": "reaction",
+                                    "smiles": "[S:1](=[O:2])(=[O:3])([C:4]([F:5])([F:6])[F:7])[O:8][cH3:9]>>O=S(=O)(O[S:1](=[O:2])(=[O:3])[C:4]([F:5])([F:6])[F:7])C(F)(F)F.[O:8][cH3:9]",
+                                    "children": [
+                                        {
+                                            "type": "mol",
+                                            "smiles": "CC(=O)c1ccc(O)c2c1CCCC2=O",
+                                            "in_stock": false,
+                                            "children": [
+                                                {
+                                                    "type": "reaction",
+                                                    "smiles": "[C:1]([CH3:2])(=[O:3])[c:5]([cH2:4])[cH2:6]>>Cl[C:1]([CH3:2])=[O:3].[cH2:4][c:5][cH2:6]",
+                                                    "children": [
+                                                        {
+                                                            "type": "mol",
+                                                            "smiles": "CC(=O)Cl",
+                                                            "in_stock": true
+                                                        },
+                                                        {
+                                                            "type": "mol",
+                                                            "smiles": "O=C1CCCc2cccc(O)c21",
+                                                            "in_stock": false,
+                                                            "children": [
+                                                                {
+                                                                    "type": "reaction",
+                                                                    "smiles": "[O:1]=[C:3]([CH3:2])[cH3:4]>>O=S([O-])([O-])=[O:1].[CH3:2][C:3][cH3:4]",
+                                                                    "children": [
+                                                                        {
+                                                                            "type": "mol",
+                                                                            "smiles": "O=S(=O)([O-])[O-]",
+                                                                            "in_stock": true
+                                                                        },
+                                                                        {
+                                                                            "type": "mol",
+                                                                            "smiles": "Oc1cccc2c1CCCC2",
+                                                                            "in_stock": true
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "mol",
+                                            "smiles": "O=S(=O)(OS(=O)(=O)C(F)(F)F)C(F)(F)F",
+                                            "in_stock": true
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+]
