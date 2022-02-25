@@ -13,20 +13,62 @@ FILES_TO_DOWNLOAD = [
         "filename": "chembl_10k_route_distance_model.ckpt",
         "url": "https://zenodo.org/record/4925903/files/chembl_10k_route_distance_model.ckpt?download=1",
     },
-    {"filename": "n1-routes.json", "url": ""},
-    {"filename": "n1-targets.txt", "url": ""},
-    {"filename": "n1-stock.txt", "url": ""},
-    {"filename": "n5-routes.json", "url": ""},
-    {"filename": "n5-targets.txt", "url": ""},
-    {"filename": "n5-stock.txt", "url": ""},
-    {"filename": "uspto_raw_template_library.csv"},
-    {"filename": "uspto_rxn_n1_raw_template_library.csv"},
-    {"filename": "uspto_rxn_n5_raw_template_library.csv", "url": ""},
-    {"filename": "uspto_rxn_n1_keras_model.hdf5", "url": ""},
-    {"filename": "uspto_rxn_n1_unique_templates.hdf5", "url": ""},
-    {"filename": "uspto_rxn_n5_keras_model.hdf5"},
-    {"filename": "uspto_rxn_n5_unique_templates.hdf5"},
-    {"filename": "150k_routes.json.gz"},
+    {
+        "filename": "n1-routes.json",
+        "url": "https://zenodo.org/record/6275421/files/n1-routes.json?download=1",
+    },
+    {
+        "filename": "n1-targets.txt",
+        "url": "https://zenodo.org/record/6275421/files/n1-targets.txt?download=1",
+    },
+    {
+        "filename": "n1-stock.txt",
+        "url": "https://zenodo.org/record/6275421/files/n1-stock.txt?download=1",
+    },
+    {
+        "filename": "n5-routes.json",
+        "url": "https://zenodo.org/record/6275421/files/n5-routes.json?download=1",
+    },
+    {
+        "filename": "n5-targets.txt",
+        "url": "https://zenodo.org/record/6275421/files/n5-targets.txt?download=1",
+    },
+    {
+        "filename": "n5-stock.txt",
+        "url": "https://zenodo.org/record/6275421/files/n5-stock.txt?download=1",
+    },
+    {
+        "filename": "uspto_raw_template_library.csv",
+        "url": "https://zenodo.org/record/6275421/files/uspto_raw_template_library.csv?download=1",
+    },
+    {
+        "filename": "uspto_rxn_n1_raw_template_library.csv",
+        "url": "https://zenodo.org/record/6275421/files/uspto_rxn_n1_raw_template_library.csv?download=1",
+    },
+    {
+        "filename": "uspto_rxn_n5_raw_template_library.csv",
+        "url": "https://zenodo.org/record/6275421/files/uspto_rxn_n5_raw_template_library.csv?download=1",
+    },
+    {
+        "filename": "uspto_rxn_n1_keras_model.hdf5",
+        "url": "https://zenodo.org/record/6275421/files/uspto_rxn_n1_keras_model.hdf5?download=1",
+    },
+    {
+        "filename": "uspto_rxn_n1_unique_templates.hdf5",
+        "url": "https://zenodo.org/record/6275421/files/uspto_rxn_n1_unique_templates.hdf5?download=1",
+    },
+    {
+        "filename": "uspto_rxn_n5_keras_model.hdf5",
+        "url": "https://zenodo.org/record/6275421/files/uspto_rxn_n5_keras_model.hdf5?download=1",
+    },
+    {
+        "filename": "uspto_rxn_n5_unique_templates.hdf5",
+        "url": "https://zenodo.org/record/6275421/files/uspto_rxn_n5_unique_templates.hdf5?download=1",
+    },
+    {
+        "filename": "150k_routes.json.gz",
+        "url": "https://zenodo.org/record/6275421/files/150k_routes.json.gz?download=1",
+    },
 ]
 
 
