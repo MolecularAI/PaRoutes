@@ -1,0 +1,15 @@
+properties:
+  iteration_limit: 750
+  time_limit: 3600
+  max_transforms: 10
+  search_algorithm: aizynthfinder.search.dfpn.SearchTree
+  post_processing:
+      all_routes: True
+policy:
+  files:
+    uspto:
+      - ../data/uspto_rxn_n5_keras_model.hdf5
+      - ../data/uspto_rxn_n5_unique_templates.hdf5
+stock:
+  files:
+    stock: aizynth_n5_stock.txt
