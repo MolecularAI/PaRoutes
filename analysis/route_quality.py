@@ -144,8 +144,6 @@ def main(optional_args: Optional[Sequence[str]] = None) -> None:
     stats = []
     for routes, reference in zip(routes_list, tqdm(references)):
         stats.append(_analyze_routes(routes, reference, args.ks))
-        if len(stats) == 10:
-            break
     stats = pd.DataFrame(stats)
 
     print(f"Number of solved targets: {stats['solved target'].sum()}")
