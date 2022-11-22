@@ -120,18 +120,18 @@ def main() -> None:
     with open(args.filename, "rb") as fileobj:
         routes_by_patent = pickle.load(fileobj)
 
-    sum_routes = sum(len(routes) for routes in routes_by_patent)
+    sum_routes = sum(len(routes) for routes in routes_by_patent.values())
     print(f"Total number of reaction groups: {len(routes_by_patent)}")
     print(f"Total number of routes: {sum_routes}")
     print(f"Average number of routes: {sum_routes/len(routes_by_patent):.2f}")
     print(
-        f"Maximun number of routes for a group: {min(len(routes) for routes in routes_by_patent)}"
+        f"Maximun number of routes for a group: {max(len(routes) for routes in routes_by_patent.values())}"
     )
     print(
-        f"Minimum number of routes for a group: {max(len(routes) for routes in routes_by_patent)}"
+        f"Minimum number of routes for a group: {min(len(routes) for routes in routes_by_patent.values())}"
     )
     print(
-        f"Number of groups having at least one routes: {sum(bool(routes) for routes in routes_by_patent)}\n"
+        f"Number of groups having at least one routes: {sum(bool(routes) for routes in routes_by_patent.values())}\n"
     )
 
     print("Loading and transforming extracted routes")

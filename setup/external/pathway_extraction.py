@@ -189,7 +189,7 @@ def extract_one_patent(record, patentID):
     if len(roots) > 100:
         print(
             "Number of roots: {} in patent {}.".format(
-                len(roots), patentID.split(".")[0]
+                len(roots), patentID #.split(".")[0]
             )
         )
     for root in roots:

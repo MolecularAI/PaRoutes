@@ -106,3 +106,5 @@ The contributors have limited time for support questions, but please do not hesi
 The software is licensed under the Apache 2.0 license (see LICENSE file), and is free and provided as-is.
 
 ## References
+
+Genheden, S.; Bjerrum, E. PaRoutes: Towards a Framework for Benchmarking Retrosynthesis Route Predictions. Digit. Discov. 2022, 1 (4), 527–539. https://doi.org/10.1039/D2DD00015F.

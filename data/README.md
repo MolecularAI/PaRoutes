@@ -18,16 +18,14 @@ PaRoutes provides two sets for benchmarking: **n1** and **n5**.
 
 To allow training of one-step retrosynthesis models, PaRoutes provides:
 
-* `uspto_raw_template_library.csv` - curated subset of USPTO dataset that was used to extract the reference routes
-* `uspto_rxn_n1_raw_template_library.csv` - curated subset of USPTO with reactions not found in the **n1** routes
-* `uspto_rxn_n5_raw_template_library.csv` - curated subset of USPTO with reactions not found in the **n5** routes
+* `uspto_template_library.csv` - curated subset of USPTO dataset that was used to extract the reference routes
+* `selected_reactions_all.csv` - all selected USPTO reactions
 
 There are also the following files with trained template-based one-step models:
 
-* `uspto_rxn_n1_keras_model.hdf5` and `uspto_rxn_n1_unique_templates.hdf5` - Keras model and associated templates trained on data not found in the **n1** routes
-* `uspto_rxn_n5_keras_model.hdf5` and `uspto_rxn_n5_unique_templates.hdf5` - Keras model and associated templates trained on data not found in the **n5** routes
+* `uspto_keras_model.hdf5` and `uspto_unique_templates.csv.gz` - Keras model and associated templates trained on data not found in the **n1** and **n5** routes
 
 ## Other files
 
 * `chembl_10k_route_distance_model.ckpt` - trained LSTM model to compute distances between synthetic routes
-* `150k_routes.json.gz` - all ~150k routes extracted from the USPTO dataset
+* `all_routes.json.gz` - all ~450k routes extracted from the USPTO dataset

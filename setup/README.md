@@ -5,7 +5,7 @@ folder should be sufficient.
 
 Roughly, these commands were used to extract routes from the USPTO dataset provided in the `../data` folder.
 
-    python extract_uspto_data.py --filename ../data/uspto_raw_template_library.csv
+    python extract_uspto_data.py --template_library ../data/uspto_template_library.csv --all_reactions ../data/selected_reactions_all.csv
     
     python extract_routes.py --max-workers 32
     
