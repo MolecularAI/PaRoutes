@@ -7,8 +7,8 @@ from pathlib import Path
 import requests
 import tqdm
 
-
-FILES_TO_DOWNLOAD = [
+FILES_TO_DOWNLOAD = {}
+FILES_TO_DOWNLOAD["V1"] = [
     {
         "filename": "chembl_10k_route_distance_model.ckpt",
         "url": "https://zenodo.org/record/4925903/files/chembl_10k_route_distance_model.ckpt?download=1",
@@ -72,6 +72,58 @@ FILES_TO_DOWNLOAD = [
 ]
 
 
+FILES_TO_DOWNLOAD["V2"] = [
+    {
+        "filename": "chembl_10k_route_distance_model.ckpt",
+        "url": "https://zenodo.org/record/4925903/files/chembl_10k_route_distance_model.ckpt?download=1",
+    },
+    {
+        "filename": "n1-routes.json",
+        "url": "https://zenodo.org/record/7341155/files/ref_routes_n1.json?download=1",
+    },
+    {
+        "filename": "n1-targets.txt",
+        "url": "https://zenodo.org/record/7341155/files/targets_n1.txt?download=1",
+    },
+    {
+        "filename": "n1-stock.txt",
+        "url": "https://zenodo.org/record/7341155/files/stock_n1.txt?download=1",
+    },
+    {
+        "filename": "n5-routes.json",
+        "url": "https://zenodo.org/record/7341155/files/ref_routes_n5.json?download=1",
+    },
+    {
+        "filename": "n5-targets.txt",
+        "url": "https://zenodo.org/record/7341155/files/targets_n5.txt?download=1",
+    },
+    {
+        "filename": "n5-stock.txt",
+        "url": "https://zenodo.org/record/7341155/files/stock_n5.txt?download=1",
+    },
+    {
+        "filename": "uspto_template_library.csv",
+        "url": "https://zenodo.org/record/7341155/files/uspto_template_library.csv?download=1",
+    },
+    {
+        "filename": "selected_reactions_all.csv",
+        "url": "https://zenodo.org/record/7341155/files/selected_reactions_all.csv?download=1",
+    },
+    {
+        "filename": "uspto_keras_model.hdf5",
+        "url": "https://zenodo.org/record/7341155/files/uspto_keras_model.hdf5?download=1",
+    },
+    {
+        "filename": "uspto_unique_templates.csv.gz",
+        "url": "https://zenodo.org/record/7341155/files/uspto_unique_templates.csv.gz?download=1",
+    },
+    {
+        "filename": "all_routes.json.gz",
+        "url": "https://zenodo.org/record/7341155/files/all_loaded_routes.json.gz?download=1",
+    },
+]
+
+
 def _download_file(url: str, filename: str) -> None:
     with requests.get(url, stream=True) as response:
         response.raise_for_status()
@@ -88,8 +140,9 @@ def _download_file(url: str, filename: str) -> None:
 
 def main() -> None:
     """Entry-point for CLI"""
+    version = sys.argv[1] if len(sys.argv) > 1 else "V2"
     base_path = Path(__file__).parent
-    for filespec in FILES_TO_DOWNLOAD:
+    for filespec in FILES_TO_DOWNLOAD[version]:
         try:
             _download_file(
                 filespec["url"], os.path.join(base_path, filespec["filename"])
