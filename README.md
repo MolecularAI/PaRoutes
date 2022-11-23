@@ -73,6 +73,33 @@ To perform clustering on the same dataset, you can type
 
 The script will print out the average number of clusters formed for each target. For further details have a look in the `data/README.md` file. 
 
+## Benchmark results
+
+### Results published in the PaRoutes publication (Genheden et al. 2022)
+
+| Search method   | Route set   |   Solved targets |   Top-1 |   Top-5 |   Top-10 |   Routes extracted |   Number of clusters |
+|:----------------|:------------|-----------------:|--------:|--------:|---------:|-------------------:|---------------------:|
+| Mcts            | set-n1      |             9714 |  0.20   |  0.55   |   0.61   |                273 |                   68 |
+| Mcts            | set-n5      |             9676 |  0.09   |  0.34   |   0.42   |                272 |                   77 |
+| Retro*          | set-n1      |             9726 |  0.17   |  0.48   |   0.54   |                264 |                   68 |
+| Retro*          | set-n5      |             9703 |  0.08   |  0.30   |   0.38   |                149 |                   39 |
+| DFPN            | set-n1      |             8475 |  0.19   |  0.33   |   0.33   |                  6 |                    2 |
+| DFPN            | set-n5      |             7382 |  0.08   |  0.14   |   0.14   |                  6 |                    2 |
+
+### Results with the 2.0 version
+
+| Search method   | Route set   |   Solved targets |   Top-1 |   Top-5 |   Top-10 |   Routes extracted |   Number of clusters |
+|:----------------|:------------|-----------------:|--------:|--------:|---------:|-------------------:|---------------------:|
+| Mcts            | set-n1      |             9691 |  0.17   |  0.46   |   0.49   |                306 |                  109 |
+| Mcts            | set-n5      |             9643 |  0.10   |  0.28   |   0.33   |                311 |                  113 |
+| Retro*          | set-n1      |             9643 |  0.15   |  0.41   |   0.45   |                154 |                   31 |
+| Retro*          | set-n5      |             9790 |  0.10   |  0.30   |   0.36   |                138 |                   26 |
+| DFPN            | set-n1      |             7436 |  0.11   |  0.17   |   0.17   |                  5 |                    2 |
+| DFPN            | set-n5      |             6231 |  0.05   |  0.07   |   0.07   |                  5 |                    2 |
+
+**Notes**
+- "Top-N" refers to the accuracy, i.e. the capability to recover the reference route among the top-N ranked routes
+- "Routes extracted" and "Number of clusters" are median over all targets
 
 ## Contributing
 
@@ -90,7 +117,6 @@ To contribute with code to the project, follow these steps:
 5. Create the pull request.
 
 Please use ``black`` package for formatting, and follow ``pep8`` style guide.
-
 
 ## Contributors
 
