@@ -88,14 +88,14 @@ The script will print out the average number of clusters formed for each target.
 
 ### Results with the 2.0 version
 
-| Search method   | Route set   |   Solved targets |   Top-1 |   Top-5 |   Top-10 |   Routes extracted |   Number of clusters |
+| Search method   | Route set   |   Solved targets |   Top-1 |   Top-5 |   Top-10 |   Routes_extracted |   Number of clusters |
 |:----------------|:------------|-----------------:|--------:|--------:|---------:|-------------------:|---------------------:|
-| Mcts            | set-n1      |             9691 |  0.17   |  0.46   |   0.49   |                306 |                  109 |
-| Mcts            | set-n5      |             9643 |  0.10   |  0.28   |   0.33   |                311 |                  113 |
-| Retro*          | set-n1      |             9643 |  0.15   |  0.41   |   0.45   |                154 |                   31 |
-| Retro*          | set-n5      |             9790 |  0.10   |  0.30   |   0.36   |                138 |                   26 |
-| DFPN            | set-n1      |             7436 |  0.11   |  0.17   |   0.17   |                  5 |                    2 |
-| DFPN            | set-n5      |             6231 |  0.05   |  0.07   |   0.07   |                  5 |                    2 |
+| Mcts            | set-n1      |             9716 |  0.2372 |  0.5107 |   0.5414 |                306 |                  109 |
+| Mcts            | set-n5      |             9689 |  0.1237 |  0.3584 |   0.4056 |                311 |                  113 |
+| Retro*          | set-n1      |             9728 |  0.2027 |  0.4516 |   0.4847 |                154 |                   31 |
+| Retro*          | set-n5      |             9729 |  0.1143 |  0.3365 |   0.3897 |                138 |                   26 |
+| DFPN            | set-n1      |             7786 |  0.1705 |  0.2456 |   0.246  |                  5 |                    2 |
+| DFPN            | set-n5      |             6730 |  0.0753 |  0.1146 |   0.1151 |                  5 |                    2 |
 
 **Notes**
 - "Top-N" refers to the accuracy, i.e. the capability to recover the reference route among the top-N ranked routes
